@@ -1,0 +1,135 @@
+.top ul li:nth-of-type(1){
+	line-height: 68px;
+	border-bottom: 2px solid #ff4500;
+}
+.content{
+	background: #f6f8fa;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:50px;
+}
+.header{
+	overflow:hidden;
+	width: 980px;
+	margin:0 auto;
+}
+.header .left{
+	width:180px;
+	height: 218px;
+	background:#fff;
+	text-align: center;
+	float: left;
+	margin:10px;
+	box-shadow: 0 0 10px #000;
+}
+.left button{
+	width:150px;
+	height:40px;
+	color:#fff;
+	font-size: 24px;
+	font-weight: bold;
+	outline:none;
+	border: none;
+	border-radius: 5px;
+	background:#ff5f19;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	
+}
+.left p{
+	color:#8596a2;
+	font-size:14px;
+}
+.left p span{
+	color:#ff5f19;
+}
+.content .banner{
+	overflow:hidden;
+	margin:10px;
+	width:747px;
+	height:218px;
+	float:right;
+	box-shadow: 0 0 10px #000;
+	position:relative;
+}
+.banner img{
+	
+	position: absolute;
+	top: 0;
+}
+.banner span{
+	display: block;
+	width:33px;
+	height:64px;
+	position:absolute;
+	top:50%;	
+	margin-top:-32px;
+	z-index: 1;
+}
+.banner span:hover{
+	background:skyblue;
+}
+.banner .one{
+	left:20px;
+	background:url('../images/sprite.png') no-repeat -237px -1869px;
+}
+.banner .two{
+	right:20px;
+	background:url('../images/sprite.png') no-repeat -237px -1936px;
+}
+
+.content .center{
+	width: 960px;
+	margin:0 auto;
+	color:#425766
+}
+.center .details{
+	height:340px;
+	background:#fff;
+	overflow:hidden;
+	margin:10px 0;
+	box-shadow: 0 0 10px #000;
+}
+.details .more{
+	float:right;
+	margin-top:10px;
+	margin-right: 10px;
+	font-size:12px;
+}
+.details .left{
+	float:left;
+	width:430px;
+	
+}
+.details .left h2{
+	overflow:hidden;
+	margin-left: 50px;
+	margin-top:30px;
+}
+.left h2 img{
+	float:left;
+}
+.left h2 span{
+	margin-top:7px;
+	margin-left:10px;
+	float:left;
+}
+.details .left .bg{
+	float:left;
+	margin-left: 50px;
+	margin-top:30px;
+}
+.details .right{
+	float:left;
+	margin-top:44px;
+	border-left: 1px solid #ccc;
+	
+}
+.details .right li{
+	float:left;	
+	margin-left:40px;
+}
+.details .right li span{
+	font-size:30px;
+	font-weight: bold;
+}

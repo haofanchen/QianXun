@@ -1,0 +1,208 @@
+
+.clear{
+	clear:both;
+}
+.top ul li:nth-of-type(2){
+	line-height: 68px;
+	border-bottom: 2px solid #ff4500;
+}
+.content{
+	background: #f6f8fa;
+	margin-top:10px;
+}
+.header{
+	overflow:hidden;
+	width: 980px;
+	margin:0 auto;
+}
+.header .left{
+	width:180px;
+	height: 218px;
+	background:#fff;
+	text-align: center;
+	float: left;
+	margin:10px;
+	box-shadow: 0 0 10px #000;
+}
+.left button{
+	width:150px;
+	height:40px;
+	color:#fff;
+	font-size: 24px;
+	font-weight: bold;
+	outline:none;
+	border: none;
+	border-radius: 5px;
+	background:#ff5f19;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	
+}
+.left p{
+	color:#8596a2;
+	font-size:14px;
+}
+.left p span{
+	color:#ff5f19;
+}
+.content .banner{
+	overflow:hidden;
+	margin:10px;
+	width:747px;
+	height:218px;
+	float:right;
+	box-shadow: 0 0 10px #000;
+	position:relative;
+}
+.banner img{
+	display:none;
+	position: absolute;
+}
+.banner span{
+	display: block;
+	width:33px;
+	height:64px;
+	position:absolute;
+	top:50%;	
+	margin-top:-32px;
+	z-index: 1;
+}
+.banner span:hover{
+	background:skyblue;
+}
+.banner .one{
+	left:20px;
+	background:url('../images/sprite.png') no-repeat -237px -1869px;
+}
+.banner .two{
+	right:20px;
+	background:url('../images/sprite.png') no-repeat -237px -1936px;
+}
+.banner .show{
+	display:block;
+}
+
+.content .center{
+	width:960px;
+	height:320px;
+	margin:10px auto;
+	background:#fff;
+	color:#425766;
+	overflow:hidden;
+}
+.center .title{
+	margin-top:20px;
+	text-indent: 2em;
+	background:url('../images/sprite1.png') no-repeat -253px -2109px;
+	
+}
+.center .title span{
+	font-size:24px;
+	font-weight:bold;
+	text-shadow:5px 5px 5px #000;
+}
+.center ul{
+	text-align:center;
+	font-size:14px;
+}
+.center ul li{
+	width:160px;
+	height:160px;
+	border: 4px solid #e2e5e9;
+	float:left;
+	border-radius:50%;
+	margin:20px 66px 0; 
+	position:relative;
+}
+
+.center ul li label{
+	font-size:40px;
+	font-weight:bold;
+	line-height:160px;
+	text-align:center;
+}
+.center ul li p{
+	position:absolute;
+	width:120px;
+	height:40px;
+	background:#fff;
+	left:50%;
+	margin-left: -60px;
+	bottom:-15px;
+	font-size:12px;
+	color:#8c9ca7;
+}
+.center ul li p span{
+	display:block;
+}
+.center ul li div{
+	width:20px;
+	height:20px;
+	background:url('../images/sprite1.png') no-repeat -250px -2136px;
+	position:absolute;
+	top:-10px;
+	right:-20px;
+	
+}
+.content .before{
+	font-size:14px;
+	color:#425766;
+	width:960px;
+	margin:20px auto 0;
+	background:#fff;
+}
+.before .title{
+	height:20px;
+	line-height:20px;
+	margin-top:30px;
+	text-indent: 2em;
+	background:url('../images/sprite1.png') no-repeat -254px -2180px;	
+	
+	float:left;
+}
+.before .tab{
+	margin-top:20px;
+	float:left;
+}
+.tab li{
+	height:40px;
+	width:100px;
+	text-align:center;
+	line-height:40px;
+	float:left;
+
+}
+.tab  .first{
+	color:#88b7ee;
+	font-weight:bold;
+	border-bottom:2px solid #88b7ee;
+}
+
+.table{
+	width:771px;
+	margin:0 auto 140px;
+	
+}
+.table li{
+	float:left;
+	width:65px;
+	height:140px;
+	border-bottom:1px solid #8bb8ee;
+	position:relative;
+	font-size:10px;
+	text-align:center;
+}
+.table li p{
+	width:65px;
+	position:absolute;
+	bottom:-30px;
+}
+.table li div{
+	width:4px;
+	height:4px;
+	background:#8bb8ee;
+	position:absolute;
+	left:50%;
+	margin-left:-2px;
+	bottom:-2px;
+}

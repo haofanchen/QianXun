@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/integral.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script>
+        	window.onload=function(){
+	        	var i=0;
+	        	var wid=$('.banner img').get(0).offsetWidth;
+	        	var timer;
+	        	console.log(wid)
+	        	console.log($('.banner img').eq(0))
+	        	function time(){
+	        		timer=setInterval(function(){
+	        			move();
+	        		},5000)
+	        	}
+
+	        	time();
+
+	        	$('.two').click(function(){
+	        		move();
+	        	})
+
+	        	$('.one').click(function(){
+	        		$('.banner img').css('left',-wid+'px');
+	        		i--;
+	        		if(i<0){
+	        			i=3
+	        		};
+
+	        		$('.banner img').eq(i).stop().animate({'left':0},100);
+	        	})
+
+	        	function move(){
+	        		
+	        		$('.banner img').css('left',wid+'px');
+	        		i++;
+	        		if(i>$('.banner img').length-1){
+	        			i=0
+	        		};
+	        		console.log(i)
+	        		console.log(wid)
+	        		$('.banner img').eq(i).stop().animate({'left':0},100);
+	        	}
+
+	        	$('.banner').hover(function() {
+	        		clearInterval(timer);
+	        	}, function() {
+	        		time();
+	        	});
+
+        	}
+        </script>
+    </head>
+    <body>
+    	<div class="top">
+    		<div>
+    		<a href="index.html"><span></span></a>
+				<ul>
+					<li><a id="yes" href="integral.html">兑换特权</a></li>
+					<li><a href="myscore.html">我的积分</a></li>
+					<li><a href="rule.html">积分规则</a></li>
+				</ul>
+    		</div>
+    	</div>
+    	<div class="content">
+    		<div class="header">
+    			<div class="left">
+    				<button>签到抽奖</button>
+    				<p>已签连续到<span>0</span>天</p>
+    			</div>
+    			<div class="banner">    				
+    				<img src="images/banner01.png" alt="">
+    				<img src="images/banner02.png" alt="">
+    				<img src="images/banner03.jpg" alt="">
+    				<img src="images/banner04.jpg" alt="">
+    				<span class="one"></span>
+    				<span class="two"></span>
+    			</div>
+    		</div>
+    		<div class="center">
+    			<div class="details">
+    				<p class="more">了解更多</p>
+	    			<div class="left">
+	    				<h2><img src="images/pptv.png" alt=""><span>PPTV聚力会员激活码</span></h2>
+	    				<img class="bg" src="images/pptv_bg.png" alt="">
+	    			</div>
+	    			<ul class="right">
+	    				<li><img src="images/pptv7.png" alt=""><br><span>5000</span>积分</li>
+	    				<li><img src="images/pptvm.png" alt=""><br><span>1500</span>积分</li>
+	    			</ul>
+    			</div>
+    			<div class="details">
+    				<p class="more">了解更多</p>
+	    			<div class="left">
+	    				<h2><img src="images/ipy.png" alt=""><span>爱奇艺VIP激活码</span></h2>
+	    				<img class="bg" src="images/iqy_bg.png" alt="">
+	    			</div>
+	    			<ul class="right">	
+	    				<li><img src="images/iqyday.png" alt=""><br><span>500</span>积分</li>
+	    				<li><img src="images/iqymonth.png" alt=""><br><span>10000</span>积分</li>
+	    			</ul>
+    			</div>
+    			<div class="details">
+    				<p class="more">了解更多</p>
+	    			<div class="left">
+	    				<h2><img src="images/bdc.png" alt=""><span>百度云会员激活码</span></h2>
+	    				<img class="bg" src="images/bdy_bg.png" alt="">
+	    			</div>
+	    			<ul class="right">	    				
+	    				<li><img src="images/bdyone.png" alt=""><br><span>4000</span>积分</li>
+	    			</ul>
+    			</div>
+    			<div class="details">
+    				<p class="more">了解更多</p>
+	    			<div class="left">
+	    				<h2><img src="images/txt.png" alt=""><span>百度文库VIP激活码</span></h2>
+	    				<img class="bg" src="images/txt_bg.png" alt="">
+	    			</div>
+	    			<ul class="right">	    				
+	    				<li><img src="images/txt_day.png" alt=""><br><span>800</span>积分</li>
+	    				<li><img src="images/txt_month.png" alt=""><br><span>4000</span>积分</li>
+	    			</ul>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>
